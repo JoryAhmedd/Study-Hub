@@ -1,0 +1,134 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 0 40px;
+}
+
+.div-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    gap: 5px;
+    text-align: center;
+}
+
+.title {
+    color: var(--one);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 15px;
+    text-transform: uppercase;
+}
+
+.main .paragraph-one { 
+    font-size: 48px;
+}
+
+.main .paragraph-one span {
+    color: var(--one);
+    letter-spacing: 3px;
+    font-size: 52px;
+}
+
+.main .paragraph-two {
+    font-size: 18px;
+    color: var(--gray);
+    width: 600px;
+    text-align: center;
+    line-height: 1.7;
+}
+ 
+
+/* div 2 */
+.div-two {
+    width: 100%;
+    background-color: var(--glass);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    gap: 40px;
+}
+
+.sec-one {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    flex: 1;
+}
+
+.title-two {
+    width: 100%;
+    font-size: 26px;
+}
+
+.paragraph {
+    width: 90%;
+    line-height: 1.4;
+    color: var(--gray);
+}
+
+.sec-two {
+    flex: 2;
+}
+
+.sec-onetwo {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sec-onetwo div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 0 10px;
+}
+
+.sec-onetwo .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--three);
+    color: var(--one);
+    border-radius: 50%;
+}
+
+.sec-onetwo div p {
+    text-align: center;
+    margin: auto;
+}
+
+
+/* div 3 */
+.div-three {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 12px;
+}
+
+.div-three p {
+    width: 600px;
+    line-height: 1.5;
+    color: var(--gray);
+}
+
+.div-three .btn {
+    text-align: center;
+    font-size: 15px;
+}

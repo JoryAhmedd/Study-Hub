@@ -1,0 +1,154 @@
+.logo {
+  font-size: 29px;
+  font-weight: 700;
+  color: var(--five);
+}
+
+.logo span {
+  color: var(--one);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  z-index: 9999;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 20px;
+  
+  width: 80%;
+  height: 75px;
+  padding: 0 20px;
+
+  background-color: var(--glass);
+  color: var(--five);
+  border-radius: 20px;
+  font-size: 15px;
+  box-shadow: var(--shadow);
+  border: 0.5px solid rgba(95, 201, 180, 0.25);
+
+  transition: var(--transition2);
+}
+
+.menu-button {
+  width: 50px;
+  height: 40px;
+  background: var(--five);
+  border: 2px solid var(--five);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 5px;
+  transition: var(--transition);
+}
+
+.menu-button:hover {
+  border-color: var(--one);
+}
+
+.menu-button span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--five);
+  transition: var(--transition);
+}
+
+.menu-button:hover span {
+  background-color: var(--white);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--five);
+  transition: var(--transition);
+}
+
+.actions .sign-in {
+    background-color: var(--one);
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    padding: 12px 17px;
+
+    transition: var(--transition);
+}
+
+.actions .sign-in:hover {
+    background-color: var(--two);
+    color: var(--white);
+}
+
+.actions button:hover {
+  color: var(--one);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  position: relative;
+  top: 60px;
+  left: 0;
+  background-color: var(--color-one);
+  color: var(--color-three);
+  height: calc(100vh - 60px);
+  width: 75%;
+
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: 300ms;
+}
+
+.show-nav-list {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+
+@media (min-width: 767px) {
+  .nav-bar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-bar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .nav-list {
+    visibility: visible;
+    transform: translateX(0);
+    position: static;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: row;
+    background-color: transparent;
+    font-size: 22px;
+    gap: 20px;
+  }
+}

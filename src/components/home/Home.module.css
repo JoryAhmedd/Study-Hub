@@ -1,0 +1,100 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.secMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 23px;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.main span {
+    text-transform: capitalize;
+}
+
+.main .paragraph-one {
+    font-size: 20px;
+    background-color: var(--light-gray);
+    /* background-color: var(--glass); */
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: var(--border-radius); 
+    border: 1px solid var(--one);
+}
+
+.main .paragraph-one span,
+.main .title span {
+    color: var(--one);
+}
+
+.main .title { 
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-size: 55px;
+}
+
+
+.main .paragraph-two {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.button {
+    padding:13px 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 30px;
+    position: absolute;
+    top: 75%;
+    padding: 20px 0;
+    background-color: var(--glass);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(95, 201, 180, 0.2);
+    border-radius: 30px;
+}
+
+.card {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  margin: 0 50px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px;
+  background: var(--three);
+  color: var(--one);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: var(--five);
+}
+
+.card p {
+  color: var(--gray);
+  line-height: 1.3;
+  font-size: 15px;
+}
