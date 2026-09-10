@@ -122,6 +122,14 @@
   visibility: visible;
 }
 
+.theme-btn {
+  background-color: transparent;
+  color: var(--color-three);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 
 @media (min-width: 767px) {
   .nav-bar {

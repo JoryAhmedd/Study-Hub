@@ -23,6 +23,29 @@
   --transition2: 0.3s ease;
 }
 
+.dark {
+  --background: #121C1A;
+  --foreground: #F8FFFD;
+
+  --one: #5FC9B4;
+  --two: #3F8F80;
+  --three: #1F3732;
+  --four: #172521;
+  --five: #DDF6F0;
+
+  --white: #F8FFFD;
+  --black: #FFFFFF;
+
+  --red: #ff5c5c;
+
+  --glass: rgba(18, 28, 26, 0.77);
+  --gray: #B5B5B5;
+  --light-gray: rgba(255, 255, 255, 0.12);
+
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

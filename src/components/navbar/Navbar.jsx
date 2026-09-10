@@ -3,11 +3,13 @@
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { useState } from "react";
+import { useTheme } from "@/context/ThemeContext";
 
 import classes from "./Navbar.module.css";
 
 export default function Navbar() {
   const [showNavList, setShowNavList] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const toggleNavList = () => setShowNavList(!showNavList);
   const hideNavList = () => setShowNavList(false);
@@ -19,6 +21,10 @@ export default function Navbar() {
           Study<span>Hub</span>
         </Link>
       </h1>
+
+      <button onClick={toggleTheme} className={classes["theme-btn"]}>
+        {theme === "light" ? "Dark" : "Light"}
+      </button>
 
       <ul
         className={`${classes["nav-list"]} ${

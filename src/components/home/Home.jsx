@@ -19,8 +19,8 @@ export default function HomePage() {
           <Button href="/sign-up" className={classes["button"]}>
             <span>➔</span> Get Started
           </Button>
-          <Button outline href="/sign-up" className={classes["button"]}>
-            <span>▶</span> Explore
+          <Button outline href="/about" className={classes["button"]}>
+            <span>▶</span> More About Us
           </Button>
         </div>
       </div>
